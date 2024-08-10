@@ -1,7 +1,25 @@
-# [Project Kuliah] Merancang Website CRUD dengan Halaman Admin dan Halaman Mahasiswa/i Menggunakan Database MySQL dan PHP
+Absensi mahasiswa dapat di akses dilink berikut: http://absensi-mahasiswa-bima.infinityfreeapp.com/
 
-Merancang Website CRUD sebagai project kuliah Internet Publisher dengan menggunakan Database MySQL dan PHP. Pada website CRUD ini memiliki 2 user yaitu user admin dan user mahasiswa/i, dimana masing masing user memiliki halaman yang berbeda.
- 
+Fitur Akun Mahasiswa:
+
+Form Absensi:
+- Tambahkan formulir absensi yang dapat diakses oleh akun mahasiswa.
+- Formulir tersebut harus memuat informasi seperti npm, nama, kelas, jurusan, jenis kelamin, semester, tanggal, waktu, dan catatan yang diperlukan untuk mengisi absensi.
+- Setelah mengisi formulir, data absensi akan disimpan ke dalam tabel mahasiswa di database dan terdapat menu tabel absensi yang dapat dilihat mahasiswa.
+
+Tabel Absensi Mahasiswa:
+- Tampilkan tabel absensi untuk setiap mahasiswa yang dapat diakses oleh akun mahasiswa.>
+- Tabel tersebut dapat menampilkan riwayat absensi beserta detailnya, seperti nama,kelas, jenis kelamin, semester, tanggal, waktu, dan catatan.
+
+Fitur Akun Admin:
+- Tabel Akun Pengguna:
+- Tampilkan tabel akun pengguna yang berisi informasi akun mahasiswa dan admin.
+- Admin dapat menambahkan, mengedit, dan menghapus akun pengguna melalui antarmuka pengelolaan akun.
+
+Tabel Absenin:
+- Tampilkan tabel absensi yang berisi data absensi dari seluruh mahasiswa.
+- Admin dapat mengelola data absensi, seperti menambah, mengedit dan menghapus entri absensi.
+
  # Akun Login 
  
 - Admin
@@ -14,5 +32,5 @@ Merancang Website CRUD sebagai project kuliah Internet Publisher dengan mengguna
   
 | Username      | Passowrd      | 
 | ------------- | ------------- |
-| `dessya`      | `dessya12`    |
+| `bimaa`       |     `123`    |
 
