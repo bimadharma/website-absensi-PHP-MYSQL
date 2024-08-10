@@ -1,4 +1,4 @@
-Absensi mahasiswa dapat di akses dilink berikut: https://bima-absensi-web.000webhostapp.com/
+Absensi mahasiswa dapat di akses dilink berikut: http://absensi-mahasiswa-bima.infinityfreeapp.com/
 
 Fitur Akun Mahasiswa:
 
