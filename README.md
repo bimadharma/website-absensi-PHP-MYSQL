@@ -1,4 +1,18 @@
 Absensi mahasiswa dapat di akses dilink berikut: http://absensi-mahasiswa-bima.infinityfreeapp.com/
+ # Akun Login 
+ 
+- Admin
+  
+| Username      | Passowrd      | 
+| ------------- | ------------- |
+| `admin`       | `admin`       |
+
+- Mahasiswa/i
+  
+| Username      | Passowrd      | 
+| ------------- | ------------- |
+| `bimaa`       |     `123`    |
+
 
 Fitur Akun Mahasiswa:
 
@@ -19,18 +33,4 @@ Fitur Akun Admin:
 Tabel Absenin:
 - Tampilkan tabel absensi yang berisi data absensi dari seluruh mahasiswa.
 - Admin dapat mengelola data absensi, seperti menambah, mengedit dan menghapus entri absensi.
-
- # Akun Login 
- 
-- Admin
-  
-| Username      | Passowrd      | 
-| ------------- | ------------- |
-| `admin`       | `admin`       |
-
-- Mahasiswa/i
-  
-| Username      | Passowrd      | 
-| ------------- | ------------- |
-| `bimaa`       |     `123`    |
 
