@@ -21,13 +21,14 @@ h3 {
 </head>
 <body>
 <!--- navbar --->
-<nav class="navbar navbar-light" style="background: linear-gradient(to right, #1C84A6, #173987);">
+<nav class="navbar navbar-light" style="background: linear-gradient(to right, #1C84A6, #173987); display: flex; justify-content: space-between; align-items: center;">
   <a class="navbar-brand" href="index.php" style="color: white; font-weight: bold; display: flex; align-items: center;">
     <img src="images/icon.png" width="80" height="30" class="d-inline-block align-top" alt="" style="margin-right: 20px;">
     HOME
   </a>
-  <a href="profile.php" style="color: white; font-weight: bold; margin-right: 920px;">PROFIL KAMPUS</a>
+  <a href="profile.php" style="color: white; font-weight: bold;">PROFIL KAMPUS</a>
 </nav>
+
 
 
 <!--- gambar -->
