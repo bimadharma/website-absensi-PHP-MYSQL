@@ -1,4 +1,4 @@
-Absensi mahasiswa dapat di akses dilink berikut: http://absensi-mahasiswa-bima.infinityfreeapp.com/
+Absensi mahasiswa dapat di akses dilink berikut: http://absensi-mahasiswa-bima-dharma.wuaze.com/
  # Akun Login 
  
 - Admin
