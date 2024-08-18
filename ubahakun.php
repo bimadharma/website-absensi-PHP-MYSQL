@@ -86,6 +86,10 @@ if (isset($_POST['ubahakun'])) {
         <div class="row my-2">
             <div class="col-md">
                 <form action="" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                        <label for="nama" class="form-label">NPM</label>
+                        <input type="text" class="form-control w-50" id="nim" value="<?= $akun['nim']; ?>" name="nim" readonly>
+                    </div>
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama</label>
                         <input type="text" class="form-control w-50" id="nama" value="<?= $akun['nama']; ?>" name="nama" readonly>

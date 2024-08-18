@@ -2,6 +2,13 @@
 // Memanggil atau membutuhkan file function.php
 require 'koneksi.php';
 
+session_start();
+// Memeriksa apakah user sudah login, jika tidak redirect ke halaman login
+if( !isset($_SESSION['username'])){
+  header("location:index.php?pesan=gagal");
+  exit;
+}
+
 // Jika fungsi tambah jika data tersimpan, maka munculkan alert dibawah
 if (isset($_POST['simpan'])) {
     if (tambah($_POST)) {

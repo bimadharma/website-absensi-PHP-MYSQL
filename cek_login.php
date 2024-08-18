@@ -5,6 +5,12 @@ session_start();
 // menghubungkan php dengan koneksi database
 include 'koneksi.php';
 
+if( isset($_SESSION['username'])){
+	header("location:index.php?pesan=gagal");
+  }
+
+
+if ( isset($_POST["username"])) {
 // menangkap data yang dikirim dari form index
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -19,33 +25,30 @@ $cek = mysqli_num_rows($index);
 if($cek > 0){
 
 	$data = mysqli_fetch_assoc($index);
+	// Ambil data nama dan nim dari database berdasarkan username
+    $nama = $data['nama'];
+    $nim = $data['nim'];
 
-	// cek jika user index sebagai admin
-	if($data['level']=="admin"){
-
-		// buat session index dan username
-		$_SESSION['username'] = $username;
-		$_SESSION['level'] = "admin";
-		// alihkan ke halaman dashboard admin
-		header("location:halaman_admin.php");
-
-	// cek jika user index sebagai mahasiswa
-	}else if($data['level']=="mahasiswa"){
-		// buat session index dan username
-		$_SESSION['username'] = $username;
-		$_SESSION['level'] = "mahasiswa";
-		// alihkan ke halaman dashboard mahasiswa
-		header("location:halaman_mahasiswa.php");
-
-	}else{
-
-		// alihkan ke halaman index kembali
-		header("location:index.php?pesan=gagal");
-	}
-
-	
+	// Cek level user
+    if($data['level']=="admin"){
+        $_SESSION['username'] = $username;
+        $_SESSION['level'] = "admin";
+        $_SESSION['nama'] = $nama;
+        $_SESSION['nim'] = $nim;
+        header("location:halaman_admin.php");
+    }else if($data['level']=="mahasiswa"){
+        $_SESSION['username'] = $username;
+        $_SESSION['level'] = "mahasiswa";
+        $_SESSION['nama'] = $nama;
+        $_SESSION['nim'] = $nim;
+        header("location:halaman_mahasiswa.php");
+    }else{
+        header("location:index.php?pesan=gagal");
+    }
 }else{
-	header("location:index.php?pesan=gagal");
+    header("location:index.php?pesan=gagal");
+}
+
 }
 
 

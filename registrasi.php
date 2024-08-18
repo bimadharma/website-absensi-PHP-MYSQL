@@ -7,7 +7,7 @@ if (isset($_POST['simpan'])) {
     if (tambahakun($_POST)) {
         echo "<script>
                 alert('Data Akun berhasil ditambahkan!');
-                document.location.href = 'akun.php';
+                document.location.href = 'index.php';
             </script>";
     } else {
         // Jika fungsi tambah jika data tidak tersimpan, maka munculkan alert dibawah
@@ -34,29 +34,6 @@ if (isset($_POST['simpan'])) {
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-  <div class="container">
-    <a class="navbar-brand" href="halaman_admin.php">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="akun.php">Menu Akun</a>
-        <li class="nav-item">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="halaman_admin.php">Tabel Absensi</a>
-        <li class="nav-item">
-        
-          <a class="nav-link" href="logout.php" tabindex="-1" aria-disabled="true">Log out</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
 </nav>
 
 <?php
@@ -93,15 +70,14 @@ if (isset($_POST['simpan'])) {
                         <input type="text" class="form-control w-50" id="kelas" placeholder="password" name="password" autocomplete="off" required>
                     </div>
                     <div class="mb-3">
-                        <label for="level" class="form-label">level</label>
+                        <label for="level" class="form-label">role</label>
                         <select class="form-select w-50" id="level" name="level">
-                            <option disabled selected value>------------------------------------level--------------------------------------------</option>
+                            <option disabled selected value>------------------------------------role--------------------------------------------</option>
                             <option value="mahasiswa">mahasiswa</option>
-                            <option value="admin">admin</option>
                         </select>
                     </div>
                     
-                    <a href="halaman_admin.php" class="btn btn-secondary">Kembali</a>
+                    <a href="index.php" class="btn btn-secondary">Kembali</a>
                     <button type="simpan" class="btn btn-primary" name="simpan">Simpan</button>
                 </form>
             </div>

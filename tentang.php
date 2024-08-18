@@ -1,3 +1,12 @@
+<?php 
+session_start();
+// Memeriksa apakah user sudah login, jika tidak redirect ke halaman login
+if( !isset($_SESSION['username'])){
+  header("location:index.php?pesan=gagal");
+  exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

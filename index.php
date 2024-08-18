@@ -67,22 +67,14 @@ require 'koneksi.php';
                                 <label for="password"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" required/>
                             </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            <div>
+                               <label for="" class="label-agree-term">Belum punya akun? <a href="registrasi.php">Registrasi</a></label> 
                             </div>
+                            
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
                             </div>
                         </form>
-                        <div class="social-login">
-                            <span class="social-label">Or login with</span>
-                            <ul class="socials">
-                                <li><a href="https://www.facebook.com"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="https://mobile.twitter.com"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                <li><a href="https://accounts.google.com"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,13 @@
 // Memanggil atau membutuhkan file function.php
 require 'koneksi.php';
 
+session_start();
+// Memeriksa apakah user sudah login, jika tidak redirect ke halaman login
+if( !isset($_SESSION['username'])){
+  header("location:index.php?pesan=gagal");
+  exit;
+}
+
 // Menampilkan semua data dari table mahasiswa berdasarkan nim secara Descending
 $siswa = query("SELECT * FROM mahasiswa ORDER BY nim DESC");
 ?>

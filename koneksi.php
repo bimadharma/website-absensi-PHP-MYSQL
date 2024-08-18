@@ -78,12 +78,12 @@ function ubah($data)
 function ubahakun($data)
 {
     global $koneksi;
-
+    $nim = htmlspecialchars($data['nim']);
     $name = htmlspecialchars($data['nama']);
     $username = htmlspecialchars($data['username']);
     $password = htmlspecialchars($data['password']);
     $level = htmlspecialchars($data['level']);
-    $sql = "UPDATE user SET username = '$username', `password` = '$password', `level` = '$level' WHERE `nama` = '$name'";
+    $sql = "UPDATE user SET nim = '$nim', `username` = '$username', `password` = '$password', `level` = '$level' WHERE `nama` = '$name'";
 
 
     mysqli_query($koneksi, $sql);
@@ -97,11 +97,12 @@ function tambahakun($data)
     global $koneksi;
 
     $nama = htmlspecialchars($data['nama']);
+    $nim= htmlspecialchars($data['nim']);
     $username= htmlspecialchars($data['username']);
     $password = htmlspecialchars($data['password']);
     $level = $data['level'];
 
-    $sql = "INSERT INTO user(nama, username, password, level) VALUES ('$nama','$username', '$password', '$level')";
+    $sql = "INSERT INTO user(nama, nim, username, password, level) VALUES ('$nama', '$nim','$username', '$password', '$level')";
 
     mysqli_query($koneksi, $sql);
 
