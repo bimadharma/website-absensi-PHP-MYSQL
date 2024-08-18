@@ -11,7 +11,7 @@ Absensi mahasiswa dapat di akses dilink berikut: https://absensi-mahasiswa-bima-
   
 | Username      | Passowrd      | 
 | ------------- | ------------- |
-| `bimaa`       |     `123`    |
+| `bima`       |     `123`    |
 
 
 Fitur Akun Mahasiswa:
